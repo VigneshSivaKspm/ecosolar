@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Award, CheckCircle, Zap, TrendingUp, ShieldCheck } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 export function Hero() {
   return (
