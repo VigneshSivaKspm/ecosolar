@@ -6,7 +6,7 @@ export function Hero() {
     <section
       className="relative overflow-hidden text-white bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url(/hero.jpg)",
+        backgroundImage: `url(${heroImage})`,
         backgroundAttachment: "fixed",
       }}
     >
