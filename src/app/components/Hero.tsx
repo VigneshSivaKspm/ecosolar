@@ -1,12 +1,13 @@
 import { motion } from "motion/react";
 import { CheckCircle } from "lucide-react";
+import heroImg from "../../hero.jpg";
 
 export function Hero() {
   return (
     <section
       className="relative overflow-hidden text-white bg-cover bg-center bg-no-repeat min-h-screen"
       style={{
-        backgroundImage: "url('/hero.jpg')",
+        backgroundImage: `url(${heroImg})`,
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",
