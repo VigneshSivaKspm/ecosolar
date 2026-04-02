@@ -6,7 +6,7 @@
   "outputDirectory": "dist",
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/(?!.*\\..*$)(?!.*/$).*",
       "dest": "/index.html"
     }
   ]
