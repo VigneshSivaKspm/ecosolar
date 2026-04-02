@@ -4,10 +4,12 @@ import { CheckCircle } from "lucide-react";
 export function Hero() {
   return (
     <section
-      className="relative overflow-hidden text-white bg-cover bg-center bg-no-repeat"
+      className="relative overflow-hidden text-white bg-cover bg-center bg-no-repeat min-h-screen"
       style={{
-        backgroundImage: `url(${heroImage})`,
+        backgroundImage: "url('/hero.jpg')",
         backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       {/* Dark Overlay for better text readability - stronger on left/center */}
