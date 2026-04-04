@@ -95,8 +95,10 @@ export function Footer() {
             </div>
 
             <div className="pt-4">
-              <p className="text-sm text-gray-400 mb-1">Managing Partner</p>
-              <p className="text-lg font-semibold text-white">P. Ratnakar</p>
+              <p className="text-sm text-gray-400 mb-2">Managing Partners</p>
+              <p className="text-lg font-semibold text-white">
+                P. Ratnakar & K. Karunakar
+              </p>
             </div>
           </motion.div>
 

@@ -160,7 +160,7 @@ export function Hero() {
         >
           <p className="text-sm text-blue-200">
             <span className="font-semibold">Eco Solar Enterprises</span> |
-            Managing Partner: P. Ratnakar
+            Managing Partners: P. Ratnakar & K. Karunakar
           </p>
         </motion.div>
       </div>

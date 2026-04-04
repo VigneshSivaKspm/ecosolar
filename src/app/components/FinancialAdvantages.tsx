@@ -14,7 +14,7 @@ const advantages = [
     icon: Percent,
     title: "Government Subsidy",
     description:
-      "Get up to ₹78,000/- subsidy under Surya Ghar Yojana for residential installations",
+      "Get up to ₹78,000/- subsidy under Surya Ghar Yojana and PM Kusum Scheme for eligible customers",
     stats: "₹78,000",
     color: "from-amber-500 to-orange-600",
   },
@@ -23,15 +23,15 @@ const advantages = [
     title: "Flexible Financing",
     description:
       "Easy EMI options and bank loans with minimal documentation and quick approval without down payment",
-    stats: "0% Down",
+    stats: "Easy Terms",
     color: "from-blue-500 to-blue-700",
   },
   {
     icon: Calculator,
-    title: "5-Year ROI",
+    title: "Quick ROI",
     description:
-      "Quick return on investment. Your system pays for itself in just 5 years with guaranteed savings",
-    stats: "5 Years",
+      "Fast return on investment. Your system pays for itself through significant savings and efficiency",
+    stats: "Proven",
     color: "from-green-500 to-green-700",
   },
   {
@@ -39,23 +39,23 @@ const advantages = [
     title: "Income Generation",
     description:
       "Earn money by selling excess power back to the grid through net metering benefits and credits",
-    stats: "₹500+/Month",
+    stats: "Passive Income",
     color: "from-emerald-500 to-teal-600",
   },
   {
     icon: Leaf,
     title: "Environmental Impact",
     description:
-      "Reduce your carbon footprint by 3-4 tons annually. Contribute to a cleaner, sustainable future",
-    stats: "4 Tons CO₂",
+      "Reduce your carbon footprint and contribute to a cleaner, sustainable future for generations",
+    stats: "Go Green",
     color: "from-green-600 to-lime-600",
   },
   {
     icon: Shield,
     title: "Energy Independence",
     description:
-      "Protection from rising electricity costs. Lock in your rates for 25+ years with full independence",
-    stats: "25+ Years",
+      "Protection from rising electricity costs with long-term energy security and full independence",
+    stats: "Protected",
     color: "from-indigo-500 to-purple-600",
   },
 ];
@@ -179,34 +179,31 @@ export function FinancialAdvantages() {
 
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center pb-3 border-b border-white/20">
-                    <span className="text-blue-100">System Cost (5kW)</span>
-                    <span className="text-xl font-bold">₹3,00,000</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-3 border-b border-white/20">
-                    <span className="text-blue-100">Govt. Subsidy</span>
-                    <span className="text-xl font-bold text-[#F59E0B]">
-                      - ₹78,000
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center pb-3 border-b border-white/20">
-                    <span className="text-blue-100">Net Cost</span>
-                    <span className="text-xl font-bold">₹2,22,000</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-3 border-b border-white/20">
+                  <h4 className="text-lg font-bold text-white mb-3">
+                    Why Choose Solar?
+                  </h4>
+                  <div className="flex items-start gap-3 pb-3 border-b border-white/20">
+                    <span className="text-[#F59E0B] text-lg">✓</span>
                     <span className="text-blue-100">
-                      Monthly Electricity Savings
-                    </span>
-                    <span className="text-xl font-bold text-[#059669]">
-                      ₹3,500+
+                      Significant long-term savings on your electricity bills
                     </span>
                   </div>
-                  <div className="flex justify-between items-center pt-2">
+                  <div className="flex items-start gap-3 pb-3 border-b border-white/20">
+                    <span className="text-[#F59E0B] text-lg">✓</span>
                     <span className="text-blue-100">
-                      Income from Excess Power
+                      Flexible payment options and financing solutions
                     </span>
-                    <span className="text-xl font-bold text-[#F59E0B]">
-                      ₹500+/Month
+                  </div>
+                  <div className="flex items-start gap-3 pb-3 border-b border-white/20">
+                    <span className="text-[#F59E0B] text-lg">✓</span>
+                    <span className="text-blue-100">
+                      Government subsidies and incentives for eligible customers
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3 pt-2">
+                    <span className="text-[#F59E0B] text-lg">✓</span>
+                    <span className="text-blue-100">
+                      25+ year warranty and lifetime support
                     </span>
                   </div>
                 </div>

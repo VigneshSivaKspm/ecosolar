@@ -55,7 +55,7 @@ const services = [
       "Efficient irrigation solutions for farms. Reduce operational costs and increase agricultural productivity.",
     features: [
       "🌾 Agricultural Irrigation",
-      "💰 90% Cost Reduction",
+      "💰 High Efficiency & Savings",
       "🏠 Household Water Supply",
       "🚜 Farm Water Management",
       "Government Subsidy Available",
