@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
-import logo from "../../logo.png";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +26,7 @@ export function Header() {
           <a href="#" className="flex items-center gap-3 group cursor-pointer">
             <div className="w-12 h-12 rounded-lg overflow-hidden transform group-hover:scale-110 transition-transform duration-300 shadow-md">
               <img
-                src={logo}
+                src="/logo.png"
                 alt="Eco Solar Enterprises Logo"
                 className="w-full h-full object-cover"
               />

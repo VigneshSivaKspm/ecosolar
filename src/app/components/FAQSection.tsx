@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
-import logo from "../../logo.png";
 
 const faqs = [
   {
@@ -56,8 +55,8 @@ export function FAQSection() {
     >
       {/* Logo Watermark Background */}
       <div className="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-around overflow-hidden">
-        <img src={logo} alt="" className="w-64 h-64 object-contain" />
-        <img src={logo} alt="" className="w-64 h-64 object-contain" />
+        <img src="/logo.png" alt="" className="w-64 h-64 object-contain" />
+        <img src="/logo.png" alt="" className="w-64 h-64 object-contain" />
       </div>
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

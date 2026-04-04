@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { MapPin, Phone, Mail, Award } from "lucide-react";
-import logo from "../../logo.png";
 
 const branches = [
   {
@@ -70,7 +69,7 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-lg overflow-hidden">
                 <img
-                  src={logo}
+                  src="/logo.png"
                   alt="Eco Solar Enterprises Logo"
                   className="w-full h-full object-cover"
                 />

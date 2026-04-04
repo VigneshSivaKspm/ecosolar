@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import { CheckCircle } from "lucide-react";
 import heroImg from "../../hero.jpg";
-import logo from "../../logo.png";
 
 export function Hero() {
   return (
@@ -19,7 +18,7 @@ export function Hero() {
 
       {/* Logo Watermark - Right side accent */}
       <div className="absolute top-1/2 right-0 transform -translate-y-1/2 opacity-10 pointer-events-none">
-        <img src={logo} alt="" className="w-96 h-96 object-contain" />
+        <img src="/logo.png" alt="" className="w-96 h-96 object-contain" />
       </div>
 
       {/* Decorative Accent Overlays */}

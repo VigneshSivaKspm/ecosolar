@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { FileText, Gauge, Construction, CheckCircle } from "lucide-react";
-import logo from "../../logo.png";
 
 const roadmapSteps = [
   {
@@ -49,8 +48,8 @@ export function CustomerRoadmap() {
     <section className="relative py-16 lg:py-24 bg-white overflow-hidden">
       {/* Logo Watermark Background */}
       <div className="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-around overflow-hidden">
-        <img src={logo} alt="" className="w-64 h-64 object-contain" />
-        <img src={logo} alt="" className="w-64 h-64 object-contain" />
+        <img src="/logo.png" alt="" className="w-64 h-64 object-contain" />
+        <img src="/logo.png" alt="" className="w-64 h-64 object-contain" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
