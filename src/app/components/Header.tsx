@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
-import { Menu, X, Phone, Leaf } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
+import logo from "../../logo.png";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,15 +24,19 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center gap-2 group cursor-pointer">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#F59E0B] to-[#D97706] rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-              <Leaf className="w-6 h-6 text-white" />
+          <a href="#" className="flex items-center gap-3 group cursor-pointer">
+            <div className="w-12 h-12 rounded-lg overflow-hidden transform group-hover:scale-110 transition-transform duration-300 shadow-md">
+              <img
+                src={logo}
+                alt="Eco Solar Enterprises Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="hidden sm:block">
               <h1 className="font-bold text-gray-900">Eco Solar</h1>
               <p className="text-xs text-gray-500">Enterprises</p>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">

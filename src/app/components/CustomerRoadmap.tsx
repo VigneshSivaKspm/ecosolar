@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { FileText, Gauge, Construction, CheckCircle } from "lucide-react";
+import logo from "../../logo.png";
 
 const roadmapSteps = [
   {
@@ -10,10 +11,10 @@ const roadmapSteps = [
       "Submit online application for Surya Ghar/PM Kusum Scheme",
       "Electricity board approval and sanction letter",
       "Technical feasibility assessment",
-      "Document verification and processing"
+      "Document verification and processing",
     ],
     timeline: "7-14 Days",
-    color: "from-blue-500 to-blue-600"
+    color: "from-blue-500 to-blue-600",
   },
   {
     icon: Gauge,
@@ -23,10 +24,10 @@ const roadmapSteps = [
       "Net meter application submission",
       "Bidirectional meter installation coordination",
       "Grid connection approval",
-      "Metering charges and security deposit"
+      "Metering charges and security deposit",
     ],
     timeline: "5-10 Days",
-    color: "from-green-500 to-green-600"
+    color: "from-green-500 to-green-600",
   },
   {
     icon: Construction,
@@ -36,17 +37,23 @@ const roadmapSteps = [
       "Earthing pit excavation (4ft x 4ft x 4ft)",
       "GI earthing rods and copper bonding installation",
       "Cement pillars for mounting structures",
-      "Cable routing and conduit installation"
+      "Cable routing and conduit installation",
     ],
     timeline: "3-5 Days",
-    color: "from-amber-500 to-amber-600"
-  }
+    color: "from-amber-500 to-amber-600",
+  },
 ];
 
 export function CustomerRoadmap() {
   return (
-    <section className="py-16 lg:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-16 lg:py-24 bg-white overflow-hidden">
+      {/* Logo Watermark Background */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-around overflow-hidden">
+        <img src={logo} alt="" className="w-64 h-64 object-contain" />
+        <img src={logo} alt="" className="w-64 h-64 object-contain" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.div
@@ -59,7 +66,8 @@ export function CustomerRoadmap() {
               What We Need From You
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A simple 3-phase process to get your solar system up and running. We'll guide you every step of the way.
+              A simple 3-phase process to get your solar system up and running.
+              We'll guide you every step of the way.
             </p>
           </motion.div>
         </div>
@@ -84,13 +92,17 @@ export function CustomerRoadmap() {
 
                 <div className="relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gray-100 h-full">
                   {/* Header */}
-                  <div className={`bg-gradient-to-br ${step.color} p-6 text-white relative`}>
+                  <div
+                    className={`bg-gradient-to-br ${step.color} p-6 text-white relative`}
+                  >
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-3">
                         <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
                           <Icon className="w-6 h-6" />
                         </div>
-                        <div className="text-2xl font-bold">Phase {index + 1}</div>
+                        <div className="text-2xl font-bold">
+                          Phase {index + 1}
+                        </div>
                       </div>
                       <div className="text-xs bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
                         {step.timeline}
@@ -108,7 +120,9 @@ export function CustomerRoadmap() {
                       {step.details.map((detail, idx) => (
                         <div key={idx} className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-[#059669] flex-shrink-0 mt-0.5" />
-                          <span className="text-sm text-gray-700 leading-relaxed">{detail}</span>
+                          <span className="text-sm text-gray-700 leading-relaxed">
+                            {detail}
+                          </span>
                         </div>
                       ))}
                     </div>
@@ -139,14 +153,19 @@ export function CustomerRoadmap() {
                   Total Timeline: 15-30 Days
                 </h3>
                 <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                  From application submission to system activation, the entire process typically takes 15-30 days. Our dedicated team will coordinate with all stakeholders and keep you informed at every stage.
+                  From application submission to system activation, the entire
+                  process typically takes 15-30 days. Our dedicated team will
+                  coordinate with all stakeholders and keep you informed at
+                  every stage.
                 </p>
               </div>
 
               <div className="grid sm:grid-cols-3 gap-6 pt-6">
                 <div className="space-y-2">
                   <div className="text-3xl font-bold text-[#1E40AF]">100%</div>
-                  <div className="text-sm text-gray-600">Documentation Support</div>
+                  <div className="text-sm text-gray-600">
+                    Documentation Support
+                  </div>
                 </div>
                 <div className="space-y-2">
                   <div className="text-3xl font-bold text-[#059669]">Zero</div>

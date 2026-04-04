@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Users, Award, Zap, MapPin } from "lucide-react";
+import logo from "../../logo.png";
 
 const achievements = [
   {
@@ -30,8 +31,15 @@ const achievements = [
 
 export function AchievementsBar() {
   return (
-    <section className="py-12 lg:py-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-12 lg:py-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
+      {/* Logo Watermark Background */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-between px-4">
+        <img src={logo} alt="" className="w-48 h-48 object-contain" />
+        <img src={logo} alt="" className="w-48 h-48 object-contain" />
+        <img src={logo} alt="" className="w-48 h-48 object-contain" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {achievements.map((achievement, index) => {
             const Icon = achievement.icon;

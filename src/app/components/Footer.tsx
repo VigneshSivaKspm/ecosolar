@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import { MapPin, Phone, Mail, Award, Leaf } from "lucide-react";
+import { MapPin, Phone, Mail, Award } from "lucide-react";
+import logo from "../../logo.png";
 
 const branches = [
   {
@@ -67,8 +68,12 @@ export function Footer() {
             className="space-y-6"
           >
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#F59E0B] to-[#D97706] rounded-lg flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 rounded-lg overflow-hidden">
+                <img
+                  src={logo}
+                  alt="Eco Solar Enterprises Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Eco Solar Enterprises</h3>
