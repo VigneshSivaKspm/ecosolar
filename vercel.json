@@ -10,7 +10,19 @@
       }
     },
     {
-      "src": "^/.*",
+      "src": "^/icons/.*",
+      "headers": {
+        "cache-control": "public, max-age=86400"
+      }
+    },
+    {
+      "src": "^/.*\\.(json|xml|png|jpg|jpeg|gif|svg)$",
+      "headers": {
+        "cache-control": "public, max-age=86400"
+      }
+    },
+    {
+      "src": "^/(?!.*\\.).*$",
       "dest": "/index.html",
       "status": 200
     }
