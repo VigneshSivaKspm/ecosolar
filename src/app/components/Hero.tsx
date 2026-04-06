@@ -1,6 +1,9 @@
 import { motion } from "motion/react";
 import { CheckCircle } from "lucide-react";
 import heroImg from "../../hero.jpg";
+import logoImg from "../../logo.png";
+import isoImg from "../../iso.png";
+import mnreImg from "../../mnre.jpeg";
 
 export function Hero() {
   return (
@@ -18,7 +21,7 @@ export function Hero() {
 
       {/* Logo Watermark - Right side accent */}
       <div className="absolute top-1/2 right-0 transform -translate-y-1/2 opacity-10 pointer-events-none">
-        <img src="/logo.png" alt="" className="w-96 h-96 object-contain" />
+        <img src={logoImg} alt="" className="w-96 h-96 object-contain" />
       </div>
 
       {/* Decorative Accent Overlays */}
@@ -37,7 +40,7 @@ export function Hero() {
             className="flex-shrink-0"
           >
             <img
-              src="/iso.png"
+              src={isoImg}
               alt="ISO 9001:2015 Certified"
               className="h-20 sm:h-24 lg:h-32 object-contain mix-blend-mode-lighten"
               style={{ mixBlendMode: "lighten" }}
@@ -51,7 +54,7 @@ export function Hero() {
             className="flex-shrink-0"
           >
             <img
-              src="/mnre.jpeg"
+              src={mnreImg}
               alt="MNRE Certified"
               className="h-20 sm:h-24 lg:h-32 object-contain"
             />
