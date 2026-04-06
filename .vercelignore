@@ -1,0 +1,3 @@
+# Include public folder in Vercel deployment
+!public/**/*
+!public/
