@@ -32,8 +32,10 @@ export function Header() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="font-bold text-gray-900">Eco Solar</h1>
+            <div>
+              <h1 className="font-bold text-gray-900 text-sm sm:text-base">
+                Eco Solar
+              </h1>
               <p className="text-xs text-gray-500">Enterprises</p>
             </div>
           </a>

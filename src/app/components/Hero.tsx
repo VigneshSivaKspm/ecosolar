@@ -27,9 +27,39 @@ export function Hero() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#F59E0B] rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Certification Badges - Top Row Above Content */}
+        <div className="flex justify-between items-start mb-8 lg:mb-12 pt-8 lg:pt-0">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex-shrink-0"
+          >
+            <img
+              src="/iso.png"
+              alt="ISO 9001:2015 Certified"
+              className="h-20 sm:h-24 lg:h-32 object-contain mix-blend-mode-lighten"
+              style={{ mixBlendMode: "lighten" }}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex-shrink-0"
+          >
+            <img
+              src="/mnre.jpeg"
+              alt="MNRE Certified"
+              className="h-20 sm:h-24 lg:h-32 object-contain"
+            />
+          </motion.div>
+        </div>
+
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start pb-8 lg:py-12">
           {/* Left Column */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
