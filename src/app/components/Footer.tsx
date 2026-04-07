@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { MapPin, Phone, Mail, Award } from "lucide-react";
+import { MapPin, Phone, Mail, Award, Facebook } from "lucide-react";
 import logoImg from "../../logo.png";
 
 const branches = [
@@ -49,6 +49,12 @@ const contactInfo = [
     label: "Email Us",
     value: "ecosolarenterprises@gmail.com",
     href: "mailto:ecosolarenterprises@gmail.com",
+  },
+  {
+    icon: Facebook,
+    label: "Follow Us",
+    value: "Facebook Page",
+    href: "https://www.facebook.com/share/17JKEWwvmx/",
   },
 ];
 
@@ -114,10 +120,15 @@ export function Footer() {
             <div className="space-y-4">
               {contactInfo.map((contact) => {
                 const Icon = contact.icon;
+                const isExternal = contact.href.startsWith("http");
                 return (
                   <a
                     key={contact.label}
                     href={contact.href}
+                    {...(isExternal && {
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    })}
                     className="flex items-center gap-4 bg-white/5 hover:bg-white/10 rounded-lg p-4 transition-all duration-300 border border-white/10 hover:border-[#059669] group"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-[#059669] to-[#047857] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -185,7 +196,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-700">
+        <div className="pt-8 border-t border-gray-700 mb-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p>
               &copy; {new Date().getFullYear()} Eco Solar Enterprises. All
@@ -211,6 +222,23 @@ export function Footer() {
                 Warranty Information
               </a>
             </div>
+          </div>
+        </div>
+
+        {/* Social Media Links */}
+        <div className="pb-8 text-center">
+          <p className="text-sm text-gray-400 mb-4">
+            Follow us on social media
+          </p>
+          <div className="flex justify-center items-center">
+            <a
+              href="https://www.facebook.com/share/17JKEWwvmx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-[#1877F2] to-[#0A66C2] text-white rounded-full hover:shadow-lg hover:scale-110 transition-all duration-300 group"
+            >
+              <Facebook className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
+            </a>
           </div>
         </div>
       </div>

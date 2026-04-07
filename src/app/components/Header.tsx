@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Facebook } from "lucide-react";
 import { useState } from "react";
 import logoImg from "../../logo.png";
 
@@ -55,6 +55,15 @@ export function Header() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-3">
+            <a
+              href="https://www.facebook.com/share/17JKEWwvmx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center justify-center p-2 text-gray-600 hover:text-[#1877F2] rounded-lg hover:bg-gray-100 transition-all duration-300"
+              title="Follow us on Facebook"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
             <a
               href="tel:8985203688"
               className="hidden sm:flex items-center gap-2 bg-[#1E40AF] hover:bg-[#1E3A8A] text-white px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 text-sm font-semibold"
